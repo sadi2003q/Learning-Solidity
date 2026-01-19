@@ -35,7 +35,8 @@ wsl
 curl -L https://foundry.paradigm.xyz | bash
 
 # Update shell configuration
-source /home/sadi2003q/.bashrc
+# source /home/sadi2003q/.bashrc
+source <Given Path From Prevous Step>
 
 # Complete Foundry installation
 foundryup
