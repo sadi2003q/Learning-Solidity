@@ -56,9 +56,7 @@ Example:
 
 
 contract L02_Variables {
-    constructor(){
 
-    }
 
     /*────────────────────────────────────────────
       1️⃣ VALUE TYPES
@@ -90,6 +88,7 @@ contract L02_Variables {
 
     // Array
     uint[] public myArray = [1, 2, 3];
+    string[] public myStringArray = ["Adnan", "Abdullah", "Sadi"];
 
     // Fixed-size array
     uint[3] public fixedArray = [10, 20, 30];
@@ -149,12 +148,8 @@ contract L02_Variables {
     int private num3 = 4;
 
 
-
-    string private myString = "Hello this is a String from Solidity";
-
-
     // Local Variable
-    function getValue() public view returns(uint) {
+    function getValue() public pure returns(uint) {
         uint value = 1;
         return value;
     }
@@ -164,9 +159,9 @@ contract L02_Variables {
 }
 
 contract L02_Variables_Test is Test {
-    function testCounter() public {
-        L02_Variables template = new L02_Variables();
-
-    }
+//    function testCounter() public {
+//        L02_Variables template = new L02_Variables();
+//
+//    }
 }
 
