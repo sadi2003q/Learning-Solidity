@@ -126,9 +126,5 @@ contract L06_HotelRoom_Test is Test {
         console.log("ETH received:", ((balanceAfter - balanceBefore) / 1 ether)); // ✅ divide by 1 ether to see ETH
 
     }
-
-
-
-
 }
 
